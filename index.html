@@ -21,6 +21,17 @@ body {
     color: #222;
 }
 
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 h1 {
     font-size: 52px;
     line-height: 1.15;
@@ -76,6 +87,8 @@ For decades, digital payments were built around banks, cards, and traditional fi
 
 
 
+<section class="fade-section">
+
 <h2>
 Digital Payments Are Growing Globally — But Not Everywhere in the Same Way
 </h2>
@@ -90,6 +103,8 @@ Digital merchant payments are expanding worldwide, but adoption patterns vary si
 src="https://datawrapper.dwcdn.net/Alybu/3/"
 height="650">
 </iframe>
+
+</section>
 
 
 
