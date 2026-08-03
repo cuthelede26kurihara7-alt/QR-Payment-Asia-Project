@@ -21,17 +21,6 @@ body {
     color: #222;
 }
 
-.fade-section {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-section.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 h1 {
     font-size: 52px;
     line-height: 1.15;
@@ -44,10 +33,11 @@ h2 {
 
 p {
     font-size: 18px;
+    margin-bottom: 25px;
 }
 
 .hero {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 iframe {
@@ -79,15 +69,23 @@ Southeast Asia is building digital payments without following the traditional ca
 
 
 <p>
-For decades, digital payments were built around banks, cards, and traditional financial networks. But mobile technology has created a different path into the digital economy.
+For decades, financial innovation followed a familiar path. Banks expanded access to financial services, consumers adopted payment cards, and digital payments developed on top of existing financial networks.
+</p>
+
+
+<p>
+However, Southeast Asia followed a different route. Instead of relying primarily on traditional card infrastructure, many economies expanded digital payments through mobile connectivity, QR payment systems, digital wallets, and new merchant networks.
+</p>
+
+
+<p>
+This raises an important question: if countries do not follow the same financial path, what does digital transformation actually look like?
 </p>
 
 
 </div>
 
 
-
-<section class="fade-section">
 
 <h2>
 Digital Payments Are Growing Globally — But Not Everywhere in the Same Way
@@ -99,12 +97,31 @@ Digital merchant payments are expanding worldwide, but adoption patterns vary si
 </p>
 
 
+<p>
+Some economies developed digital payment ecosystems through mature banking and card infrastructure. Others accelerated adoption through mobile technology and alternative payment networks.
+</p>
+
+
+<p>
+The global picture shows that there is no single route into the digital economy. Different markets are building different foundations for digital participation.
+</p>
+
+
 <iframe 
 src="https://datawrapper.dwcdn.net/Alybu/3/"
 height="650">
 </iframe>
 
-</section>
+
+
+<p>
+While digital payments are becoming more common globally, the most interesting transformation is happening in markets where new payment infrastructure is developing alongside — or outside of — traditional financial systems.
+</p>
+
+
+<p>
+Southeast Asia provides a unique example of this transition.
+</p>
 
 
 
@@ -118,10 +135,25 @@ Southeast Asian countries are building digital payment ecosystems through differ
 </p>
 
 
+<p>
+Thailand and Malaysia show strong adoption of digital merchant payments alongside high levels of financial access. Indonesia and the Philippines demonstrate another pathway, where mobile-based infrastructure is expanding participation among consumers and businesses.
+</p>
+
+
+<p>
+Rather than following one universal model, each economy is developing its own bridge into the digital economy.
+</p>
+
+
 <iframe 
 src="https://datawrapper.dwcdn.net/Ahtpu/5/"
 height="650">
 </iframe>
+
+
+<p>
+These differences reveal that digital transformation is not only about technology adoption. It is also about how countries design accessible infrastructure that connects consumers, merchants, and financial services.
+</p>
 
 
 
@@ -131,7 +163,17 @@ Low Cards, High Digital Payments
 
 
 <p>
-Malaysia and Thailand reveal a surprising pattern: digital merchant payments can grow even when card payment usage remains very low.
+The most surprising pattern appears when comparing traditional card usage with digital merchant payment adoption.
+</p>
+
+
+<p>
+Malaysia and Thailand achieved digital merchant payment adoption above 50%, while card payment usage remained extremely low.
+</p>
+
+
+<p>
+This challenges the assumption that digital payment ecosystems must develop through a card-first pathway. Instead, some economies are creating new payment systems directly through mobile and digital infrastructure.
 </p>
 
 
@@ -153,31 +195,15 @@ Southeast Asia did not skip digital payments. It built a different path.
 
 
 <p>
-Digital transformation does not follow one universal blueprint. Different economies are building different bridges into the digital economy.
+The region demonstrates that financial transformation does not follow one universal blueprint. Countries can create new pathways by combining mobile connectivity, digital infrastructure, and inclusive payment networks.
 </p>
 
-<script>
 
-const sections = document.querySelectorAll(".fade-section");
+<p>
+The future of payments will not be defined by replacing one system with another. It will be shaped by different economies building different bridges into the digital economy.
+</p>
 
-const observer = new IntersectionObserver(
-    entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-            }
-        });
-    },
-    {
-        threshold: 0.2
-    }
-);
 
-sections.forEach(section => {
-    observer.observe(section);
-});
-
-</script>
 </body>
 
 </html>
