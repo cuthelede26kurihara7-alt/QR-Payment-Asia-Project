@@ -156,7 +156,28 @@ Southeast Asia did not skip digital payments. It built a different path.
 Digital transformation does not follow one universal blueprint. Different economies are building different bridges into the digital economy.
 </p>
 
+<script>
 
+const sections = document.querySelectorAll(".fade-section");
+
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    {
+        threshold: 0.2
+    }
+);
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+</script>
 </body>
 
 </html>
